@@ -31,7 +31,9 @@ function HeroSection() {
       </div>
       <div className={styles.right}>
         <div className={styles.card}>
-          <h3 className={styles.top_title}>june 24th 4pm utc</h3>
+          <h3 className={styles.top_title}>
+            <span>june 24th 4pm utc</span>
+          </h3>
           <h2 className={styles.title}>$SKYF token pre-sale</h2>
           <div className={styles.line}></div>
           <div className={styles.progress}>
