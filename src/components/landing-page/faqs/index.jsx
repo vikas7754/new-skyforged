@@ -65,6 +65,7 @@ export default function Faqs() {
       <h2 className="title center padding">FAQS</h2>
       {faqs.map((faq, index) => (
         <Accordion
+          key={index}
           expanded={expanded === `panel${index}`}
           onChange={handleChange(`panel${index}`)}
           className={styles.accordion}

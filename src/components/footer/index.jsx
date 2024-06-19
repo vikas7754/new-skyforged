@@ -32,13 +32,13 @@ function Footer() {
                   <Link href="/">Back to top</Link>
                 </li>
                 <li>
-                  <Link href="/all">About game</Link>
+                  <Link href="/">About game</Link>
                 </li>
                 <li>
-                  <Link href="/utilities">Roadmap</Link>
+                  <Link href="/">Roadmap</Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy">SKYF token</Link>
+                  <Link href="/">SKYF token</Link>
                 </li>
               </ul>
             </div>
@@ -51,13 +51,13 @@ function Footer() {
                   <Link href="/">twitter</Link>
                 </li>
                 <li>
-                  <Link href="/all">discord</Link>
+                  <Link href="/">discord</Link>
                 </li>
                 <li>
-                  <Link href="/utilities">telegram</Link>
+                  <Link href="/">telegram</Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy">reddit</Link>
+                  <Link href="/">reddit</Link>
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@ function Footer() {
                   <Link href="/">white paper</Link>
                 </li>
                 <li>
-                  <Link href="/all">airdrop</Link>
+                  <Link href="/">airdrop</Link>
                 </li>
               </ul>
             </div>
