@@ -1,0 +1,11 @@
+.left {
+  position: absolute;
+  left: -150px;
+  top: -350px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(var(--border), var(--bg));
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+}
