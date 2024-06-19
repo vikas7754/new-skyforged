@@ -1,0 +1,153 @@
+.footer {
+  background: var(--secondary);
+  position: relative;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footerContent {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  > div {
+    flex: 1;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--primary);
+    &:hover {
+      color: var(--text);
+    }
+    img {
+      padding: 5px;
+    }
+  }
+}
+.btn {
+  a {
+    width: fit-content;
+  }
+}
+.aboutText {
+  p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &:first-child {
+      width: 200px;
+    }
+    > a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.9rem;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
+.links {
+  p {
+    color: var(--text-dim);
+  }
+  h3 {
+    width: fit-content;
+    color: var(--text);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    border-bottom: 2px solid var(--text);
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: var(--primary);
+      margin-bottom: 10px;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 0;
+        color: var(--text-dim);
+        transition: all 0.3s;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        &:hover {
+          color: var(--primary);
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+    a {
+      text-decoration: none;
+      color: var(--text-dim);
+      margin-left: 10px;
+      &:hover {
+        color: var(--primary);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.hr {
+  background: var(--primary);
+  height: 1px;
+  color: var(--primary);
+}
+@media screen and (max-width: 900px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .linksContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 400px;
+  }
+}

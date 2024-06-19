@@ -1,0 +1,22 @@
+.container {
+  margin: 5rem 0;
+  .accordion {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    .question {
+      font-size: clamp(20px, 2vw, 24px) !important;
+      font-family: var(--font);
+    }
+    svg {
+      color: var(--primary);
+    }
+    &:hover {
+      .question {
+        color: var(--primary);
+      }
+    }
+  }
+}

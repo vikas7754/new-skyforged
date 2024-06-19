@@ -1,0 +1,27 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //   background: var(--bg);
+}
+
+.navbar__menu {
+  position: fixed;
+  top: 0;
+}
+
+.navbar__logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.toggle {
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

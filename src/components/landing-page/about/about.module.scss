@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+
+.left {
+  max-width: 450px;
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .box {
+    flex: 1 1 280px;
+  }
+}
+
+.box {
+  border: 2px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 10px;
+  h3 {
+    font-size: clamp(24px, 2vw, 28px);
+    margin-bottom: 10px;
+    span {
+      color: var(--primary);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    max-width: 100%;
+  }
+}

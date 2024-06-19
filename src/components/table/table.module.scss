@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: none;
+  box-shadow: 0 0 15px var(--primary);
+  border-radius: 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-top: 3rem;
+  thead {
+    width: 100%;
+    background: #5271ff26;
+    padding: 20px;
+  }
+  tr {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    &:hover {
+      background: #5271ff26;
+    }
+    &.active {
+      background: var(--border);
+    }
+  }
+  td,
+  th {
+    flex: 1;
+  }
+  th {
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-size: clamp(18px, 2vw, 22px);
+  }
+}
